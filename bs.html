@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello</title>
+</head>
+<style>
+    .sur{
+        background-color: rgba(255,255,255,0.957);
+        border-color:rgb(108,117,125);
+        border-style:solid;
+        border-width:1px;
+        border-radius:4px;
+        color:rgb(108,117,125);
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:30px;
+        padding-right:30px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-left:45%;
+        cursor:pointer;
+        transition:background-color 0.15s,color 0.15s;
+    }
+    .sur:hover{
+        background-color:rgb(108,117,125);
+        color:rgba(255,255,255,0.957);
+    }
+    .heading{
+        font-weight:bold;
+        font-size:50px;
+        font-family:cursive;
+        color:#ffdf00;
+    }
+</style>
+<body style="background-color: #141a24;">
+  <p class="heading">Following through odin's project. This is here just as a placeholder and nothing else. Pls bear with me</p>
+    <button id="show-gif-button"class="sur"onclick="displayText()">surprise</button>
+    <img id="mashle-gif" src="/mashle-magic-and-muscles-mash-dance-mashle-magic-and-muscles.gif" style="display: none;padding-top:25px;margin-left:40%;scale:150%;">
+   
+    <div id="textField" style="display: none;color:aliceblue;margin-left:30%;padding-top:80px;">
+        EHEHEHEHEHHEHEHEH! you've been mashle-ddd!!XP
+    </div>
+
+
+
+</body>
+<script>
+    function displayText() {
+  var text = document.getElementById("textField");
+  text.style.display = "block";
+}
+const showImageButton = document.getElementById("show-gif-button");
+      const myImage = document.getElementById("mashle-gif"); 
+      showImageButton.addEventListener("click", () => { 
+         myImage.style.display = "block"; 
+      });
+</script>
+</html>
